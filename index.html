@@ -32,6 +32,18 @@
       max-width: 1000px;
     }
 
+    .em_padd {
+      padding-left: 4rem;
+      padding-right: 4rem;
+    }
+
+    .em_body_text {
+      font-family: 'Open Sans', Arial, sans-serif;
+      font-size: 14px;
+      letter-spacing: .5px;
+      color: #707070;
+    }
+
   </style>
 </head>
 <body class="em_body" bgcolor="#ffffff">
@@ -40,31 +52,40 @@
     <tbody>
       <tr>
         <td valign="top" align="center">
-          <table class="em_main_table" style="width:700px;" width="700" cellspacing="0" cellpadding="0" border="0" align="center">
+          <table class="em_main_table" style="width:100%;" width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
 
             <tr>
-
               <td valign="top" align="center">
                 <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
                   <tbody>
                     <tr>
                       <td align="center" style="padding:4rem;">
+                    <!-- HANDLES BMT LOGO -->
                         <img class="em_img" alt="BMT Micro, Inc. logo" src="images/BMTMicroLogo274x79-e1502730787372.png">
+                    <!-- END LOGO CODE -->
                       </td>
                     </tr>
                   </tbody>
                 </table>
-
               </td>
-
             </tr>
-
+            <tr>
+              <td class="em_padd" align="left">
+                <table width="75%">
+                  <tbody>
+                    <tr>
+                      <td class="em_body_text">
+                        Dear ##FIRSTNAME LASTNAME##,
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
           </table>
-
         </td>
       </tr>
     </tbody>
-
   </table>
 
 </body>
