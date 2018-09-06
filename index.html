@@ -77,6 +77,10 @@
       color: #707070;
     }
 
+    .em_span {
+      margin-bottom: 1rem !important;
+    }
+
     .em_footer {
       padding-top: 1.5rem;
       padding-bottom: 1.5rem;
@@ -101,6 +105,7 @@
     .em_footer_text {
       font-size: 14px;
       letter-spacing: .7px;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
       padding-bottom: 0px !important;
       padding-top: 1rem !important;
     }
@@ -137,6 +142,13 @@
       }
       .em_footer_text {
         font-size: 12px;
+      }
+    }
+
+    @media screen and (max-width: 530px) {
+      body {
+        padding: 1rem !important;
+        margin: 0 !important;
       }
     }
 
@@ -179,12 +191,14 @@
               </td>
             </tr>
             <tr>
-              <td class="em_padd" align="left">
+              <td class="em_padd">
                 <table width="100%">
                   <tbody>
                     <tr>
                       <td class="em_body_text">
-                        ## Text starts here ##
+                        <span class="em_span">## Text starts here ##</span>
+                      </td>
+                      <td class="em_body_text">
                       </td>
                     </tr>
                   </tbody>
