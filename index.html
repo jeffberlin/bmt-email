@@ -24,6 +24,36 @@
       -webkit-font-smoothing: antialiased !important;
     }
 
+    img {
+      outline: none !important;
+      border: 0 !important;
+    }
+
+    table {
+      border-collapse: collapse;
+      mso-table-lspace: 0px;
+      mso-table-rspace: 0px;
+    }
+
+    td, a, span {
+      border-collapse: collapse;
+      mso-line-height-rule: exactly;
+    }
+
+    .ExternalClass * {
+      line-height: 100%;
+    }
+
+    span.MsoHyperlink {
+      mso-style-property: 99;
+      color: inherit;
+    }
+
+    span.MsoHyperlinkFollowed {
+      mso-style-property: 99;
+      color: inherit;
+    }
+
     .em_full_wrap {
       border-top-left-radius: 8px;
       border-top-right-radius: 8px;
@@ -33,9 +63,11 @@
     }
 
     .em_padd {
-      padding-left: 4rem;
-      padding-right: 4rem;
-      padding-bottom: 4rem;
+      padding: 0 4rem 4rem;
+    }
+
+    .em_bmt_logo {
+      padding: 4rem;
     }
 
     .em_body_text {
@@ -73,6 +105,54 @@
       padding-top: 1rem !important;
     }
 
+    @media only screen and (min-width:481px) and (max-width:699px) {
+      .em_main_table {
+        width: 100% !important;
+      }
+      .em_padd {
+        padding: 0 3rem 3rem !important;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      .em_bmt_logo {
+        padding: 3rem;
+      }
+      .em_img {
+        width: 220px;
+      }
+      .em_social_img img {
+        width: 32px;
+        height: 32px;
+      }
+    }
+
+    @media screen and (max-width: 576px) {
+      .em_body_text {
+        font-size: 14px;
+      }
+      .em_social_img img {
+        width: 30px;
+        height: 30px;
+      }
+      .em_footer_text {
+        font-size: 12px;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      .em_main_table {
+        width: 100% !important;
+      }
+      .em_padd {
+        padding: 0 1rem 3rem !important;
+      }
+      u + .em_body .em_full_wrap {
+        width: 100% !important;
+        width: 100vw !important;
+      }
+    }
+
   </style>
 </head>
 <body class="em_body" bgcolor="#ffffff">
@@ -88,7 +168,7 @@
                 <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
                   <tbody>
                     <tr>
-                      <td align="center" style="padding:4rem;">
+                      <td class="em_bmt_logo" align="center">
                     <!-- HANDLES BMT LOGO -->
                         <img class="em_img" alt="BMT Micro, Inc. logo" src="images/BMTMicroLogo274x79-e1502730787372.png">
                     <!-- END LOGO CODE -->
