@@ -82,8 +82,7 @@
     }
 
     .em_footer {
-      padding-top: 1.5rem;
-      padding-bottom: 1.5rem;
+      padding: 1.5rem;
       color: #ffffff;
       font-family: 'Open Sans', Arial, sans-serif;
     }
@@ -162,6 +161,13 @@
       u + .em_body .em_full_wrap {
         width: 100% !important;
         width: 100vw !important;
+      }
+    }
+
+    @media screen and (max-width: 455px) {
+      .em_footer {
+        padding-left: .5rem !important;
+        padding-right: .5rem !important;
       }
     }
 
